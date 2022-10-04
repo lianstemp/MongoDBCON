@@ -11,7 +11,8 @@ app.use("/api/blogs", blogRouter);
 
 //configure mongoose
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/blog",
+  //process.env.MONGODB_URI || 
+  "mongodb://127.0.0.1:27017/blog",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
