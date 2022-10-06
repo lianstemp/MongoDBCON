@@ -7,7 +7,6 @@
 $ npm i --prefix
 ```
 
-<<<<<<< HEAD
 ## Setup 
 
 > Create .env file in MONGODBCON root folder
