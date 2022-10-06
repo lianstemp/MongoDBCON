@@ -11,7 +11,6 @@ const app = express();
 const clusterUrl = `mongodb://${env.mongoose.username}:${env.mongoose.password}@${env.mongoose.host}:${env.mongoose.port || '27017'}/${env.mongoose.database}?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false`
 const ca = `${path.join(__dirname, `./ssl/${ env.mongoose.cert || 'rds-combined-ca-bundle.pem'}`)}`
 
-
 //middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
